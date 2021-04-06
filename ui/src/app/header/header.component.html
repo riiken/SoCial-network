@@ -1,0 +1,11 @@
+<header>
+    <div class="menu left">Social Network</div>
+    <nav>
+        <a class="menu" *ngIf="isSignIn"><button class="butn" routerLink="addpost">Post your Story </button></a>
+        <a class="menu" *ngIf="isSignIn" routerLink="signin">Log Out</a>
+        <a class="menu" *ngIf="!isSignIn" routerLink="signup">Sign Up</a>
+        <a class="menu" *ngIf="!isSignIn" routerLink="signin">Sign In</a>
+        <a class="menu" *ngIf="isSignIn">{{email}}</a>
+        <a class="menu" *ngIf="isSignIn" routerLink="home">Home</a>
+    </nav>
+</header>

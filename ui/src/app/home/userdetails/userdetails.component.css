@@ -1,0 +1,78 @@
+.card{
+    color: #000000;
+    width: 65%;
+    cursor: pointer;
+    background-color: #EDEDED;
+    display: block;
+    margin-bottom: 1%;
+}
+.username{
+    font-weight: bold;
+    font-size: 125%;
+}
+.userbio{
+    font-weight: 500;
+    font-size: 100%;
+}
+.card-body{
+    padding: 2% 6%;
+}
+.details{
+    margin: 2% 10%;
+}.card{
+    color:black;
+    width: 320px;
+    margin-top: 26px;
+    margin-left: 164px;
+    cursor: pointer;
+}
+.username{
+    font-weight: bold;
+    font-size: 125%;
+}
+.userbio{
+    font-weight: 500;
+    font-size: 100%;
+}
+.card-body{
+    padding: 2% 6%;
+}
+.details{
+    margin: 2% 10%;
+}
+.heading{
+    font-size: 125%;
+    margin-bottom: 3%;
+    color: #636363;
+    font-weight: bold;
+}
+.col-md-2{
+   
+    padding: 0;
+}
+img{
+    background: #EDEDED;
+    width: 80%;
+    border-radius: 50%;
+}
+
+.para{
+    font-size: 25px;
+    margin-left: 163px;
+    opacity: 0.5;
+}
+.heading{
+    font-size: 125%;
+    margin-bottom: 3%;
+    color: #636363;
+    font-weight: bold;
+}
+.col-md-2{
+    padding: 0;
+}
+img{
+    background: #EDEDED;
+    width: 80%;
+    border-radius: 50%;
+    margin: auto;
+}

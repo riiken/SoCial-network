@@ -1,0 +1,16 @@
+<div class="details">
+    <div class="para">Recent New Users</div>
+    <div class="card" *ngFor="let user of userDetailArr">
+        <div class="card-body" (click)="navigate(user)">
+            <div class="row">
+                <div class="col-md-2">
+                    <img srcset="{{user.user_img}}" src="../../../assets/person.svg" alt="">
+                </div>
+                <div class="col-md-9">
+                    <div class="username">{{user.name}}</div>
+                    <div class="userbio">{{user.bio}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+.card{
+    width: 50%;
+    margin: 2% auto;
+    margin-top:5%;
+}
+.card-body{
+    color: #000000;
+    padding: 3%;
+}
+.card-header{
+    background-color:white;
+    text-align: center;
+    color:black;
+}
+.center{
+    text-align: center;
+}
+
+.yess{
+    margin-left: 25%;
+}

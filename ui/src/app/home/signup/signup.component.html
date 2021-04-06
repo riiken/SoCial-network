@@ -1,0 +1,65 @@
+<div class="card">
+    <div class="card-header center">
+        Sign Up Please
+    </div>
+    <div class="card-body">
+        <form #signupForm="ngForm">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="form-group row">
+                        <label for="inputname" class="col-sm-3 col-form-label">Name</label>
+                        <div class="col-sm-9">
+                            <input type="text" name="name" [(ngModel)]="name" class="form-control" id="inputname" placeholder="Enter Name">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputemail" class="col-sm-3 col-form-label">Email</label>
+                        <div class="col-sm-9">
+                            <input type="email" name="email" [(ngModel)]="email" class="form-control" id="inputemail" placeholder="Enter Email">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputPassword" class="col-sm-3 col-form-label">Password</label>
+                        <div class="col-sm-9">
+                            <input type="password" name="password" [(ngModel)]="password" class="form-control" id="inputPassword" placeholder="Enter Password">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputinsta" class="col-sm-3 col-form-label">Instagram Name</label>
+                        <div class="col-sm-9">
+                            <input type="text" name="insta_id" [(ngModel)]="insta_id" class="form-control" id="inputinsta" placeholder="Enter Insta Handle">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputcountry" class="col-sm-3 col-form-label">Country</label>
+                        <div class="col-sm-9">
+                            <input type="text" name="country" [(ngModel)]="country" class="form-control" id="inputcountry" placeholder="Your Country">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputbio" class="col-sm-3 col-form-label">BIO</label>
+                        <div class="col-sm-9">
+                            <textarea name="bio" [(ngModel)]="bio" class="form-control" id="inputbio" cols="63" rows="3" placeholder="Your Bio"></textarea>
+                        </div>
+                    </div>
+                    <span *ngIf='signErr' class="error">{{signErr}}</span>
+                    <div class="form-group row">
+                        <div class="centerm">
+                            <button (click)="signUp()" type="button" class="btn btn-primary">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- user_img -->
+                <div class="col-md-4">
+                    <label for="upload-image">
+                        <div class="image-contain">
+                            <img srcset="{{this.user_img}}" class="mx-auto d-block" src="../../../assets/person_add_alt.svg" alt="upload image">
+                        </div>
+                    </label>
+                    <div *ngIf="showFileName">FileName: {{fileName}}</div>
+                    <input (change)="updateImage($event)" class="d-none position-absolute" type="file" id="upload-image">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
